@@ -1,114 +1,141 @@
 extends layout
 
 block content
-  .container
-    .row
-      .col-sm-8.blog-main
-        .blog-post
-          h2.blog-post-title About Me
-          p.blog-post-meta
-            | Born in March 28, 1990
-          p
-            | Hi, My name is Gilang Ramadan, Im Web Developer Living in Bandung, Indonesia
-          p
-            | I Primaly use 
-            strong Ruby
-            |  and 
-            strong PHP
-            | , but picking up a new framework or language isn't a problem, I have extensive programming experience and I'm confortable developing on frontend or backend as well.
-          p
-            | My highest priority is to satisfy the customer through early and continuous delivery of web application.
-        // /.blog-post
-        .blog-post
-          h2.blog-post-title Experience
-          p.blog-post-meta
-            | Work Experience
-          p
+  .wrapper
+    .wrapper-mid
+    // Begin Paper
+    #paper
+      #paper-mid
+        .entry
+          // Begin Image
+          img.portrait.img-square(src='/images/profile.jpg', alt='John Smith')
+          // End Image
+          // Begin Personal Information
+          .self
+            h1.name
+              | M Gilang Ramadan 
+              br
+              span Web Developer
             ul
-              li
-                | Backend Developer, Polytechnics Piksi Ganesha certification body (2013 - 2015)
-              li
-                | Backend Developer, Walden Global Services (2015 – now)
-        .blog-post
-          h2.blog-post-title Projects
-          p.blog-post-meta
-            | Related Projects
-          p
-           ol.list-unstyled
+              li.ad Bandung, Indonesia
+              li.mail mgrware@gmail.com
+              li.tel +62 87823290601
+          // End Personal Information
+          // Begin Social
+          // Begin 1st Row
+          .entry
+            h2 OBJECTIVE
+            p
+              | I Primaly use Ruby and PHP, but picking up a new framework or language isn't a problem, I have extensive programming experience and I'm confortable developing on frontend or backend as well.
+            p
+              | My highest priority is to satisfy the customer through early and continuous delivery of web application.
+          // End 1st Row
+          // Begin 2nd Row
+          .entry
+            h2 EDUCATION
+            .content
+              h3 2011 - 2015
+              p
+                | Politechnics Piksi Ganesha, Bandung 
+                br
+                em Management Informatics
+          // End 2nd Row
+          // Begin 3rd Row
+          .entry
+            h2 EXPERIENCE
+            .content
+              h3 2013 - 2015
+              p
+                | Developer, Professional Certification Body 
+                br
+                em Developer
+              ul.info
+                li System Administrator 
+                li Build Application
+                li Database Administrator
+            .content
+              h3 2015 - Now
+              p
+                | Web Developer, Walden Global Service 
+                br
+                em Backend Developer
+              ul.info
+                li Build Web Application
+                li Scrum
+                li Agile Software Development
+          // End 3rd Row
+          // Begin 4th Row
+          .entry
+            h2 SKILLS
+            .content
+              h3 Languages
+              ul.skills
+                li CSS
+                li PHP
+                li JavaScript
+                li Ruby on Rails
+                li NodeJS
+                li Phyton
+                li SQL
+            .content
+              h3 Frameworks
+              ul.skills
+                li Rails
+                li Jquery
+                li Laravel
+                li AdonisJS
+                li ExpressJS
+                li ReactNative
+                li ReactJS
+                li Phyramid
+            .content
+              h3 Subversion
+              ul.skills
+                li GIT
+                li LINUX
+          // End 4th Row
+          // Begin 5th Row
+          .entry
+            h2 WORKS
+            ul.works
               li
                 | System Management Certification Body
-                ul
-                  li PHP with Laravel, MySql 
-              li 
-                | Triplulu Travel Agent System 
-                ul
-                  li PHP with Laravel, MySql 
+                br
+                em Laravel, MySql
+              li
+                | Triplulu Travel Agent System
+                br
+                em Laravel, MySql
               li
                 | Payment Point Online Bank
-                ul
-                  li Ruby On Rails, MySql
-              li 
+                br
+                em Ruby On Rails, MySql
+              li
                 | Rachipta Funiture Company Profile
-                ul
-                 li PHP with Laravel, Mysql
-              li 
+                br
+                em Laravel, MySql
+              li
                 | Catalogue Shopie Paris
-                ul
-                  li Ruby On Rails, Postgresql
-              li 
+                br
+                em Ruby On Rails, PostgresSQL
+              li
                 | Pratesis Mobile Audit
-                ul 
-                  li Ruby On Rails, Postgresql
+                br
+                em Ruby On Rails, PostgresSQL
               li
                 | Nutrifood Shipping Export & Import
-                ul
-                  li Ruby On Rails, SqlServer
+                br
+                em Ruby On Rails, SqlServer
               li
                 | Nutrifood – JPM/STL (Weekly Production Schedule)
-                ul
-                  li Ruby On Rails, SqlServer
+                br
+                em Ruby On Rails, SqlServer
               li
                 | Audit Advisor field
-                ul
-                  li Ruby On Rails, Mysql
-
-        // /.blog-post
-
-      .col-sm-4.offset-sm-1.blog-sidebar
-        .sidebar-module
-          h3.text-center
-          .card.card-01
-            .profile-box
-              img.card-img-top.rounded-circle(src='/images/profile.jpg', alt='Card image cap')
-            .card-body.text-center
-              span.badge-box
-                i.fa.fa-check
-              h4.card-title Gilang Ramadan
-              p.card-text
-                | mgrware@gmail.com | 087823290601
-              span.social-box
-                a(href='https://github.com/mgrware')
-                  i.fa.fa-github
-                a(href='https://www.linkedin.com/in/gilang-ramadan-310115148/')
-                  i.fa.fa-linkedin
-        .sidebar-module
-          h4 Programming Language
-          ol.list-unstyled
-            li PHP
-            li Ruby
-            li JavaScript
-            li Python
-        .sidebar-module
-          h4 Framework
-          ol.list-unstyled
-            li Jquery
-            li ReactJs
-            li NodeJs
-            li ExpressJs
-            li Pyramid
-            li Laravel
-            li Rails
-            li ReactNative
-
-    // /.row
-  // /.container
+                br
+                em Ruby On Rails, MySql
+          // Begin 5th Row
+        .clear
+        .paper-bottom
+      // End Paper
+    .wrapper-bottom
